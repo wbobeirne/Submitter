@@ -1,0 +1,568 @@
+05 Oct 2011 12:18:08,159 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.InvalidCastException: Failed to convert parameter value from a Int32 to a Guid. ---> System.InvalidCastException: Invalid cast from 'System.Int32' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.Int32.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 12:18:10,440 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 2...
+ 05 Oct 2011 12:18:10,579 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 12:18:10,583 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 12:18:10,585 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded while deleting a user from the database!
+ System.InvalidCastException: Failed to convert parameter value from a Int32 to a Guid. ---> System.InvalidCastException: Invalid cast from 'System.Int32' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.Int32.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.DeleteUser(UserVO user) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 218
+05 Oct 2011 12:20:08,344 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommentID', table 'Submitter.dbo.tbl_Comment'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 12:20:08,475 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 3...
+ 05 Oct 2011 12:20:08,479 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 12:20:08,482 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 12:20:08,487 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded while deleting a user from the database!
+ System.InvalidCastException: Failed to convert parameter value from a Int32 to a Guid. ---> System.InvalidCastException: Invalid cast from 'System.Int32' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.Int32.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.DeleteUser(UserVO user) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 218
+05 Oct 2011 12:20:57,220 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 12:20:57,296 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 1...
+ 05 Oct 2011 12:20:57,381 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 12:20:57,387 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 12:20:57,393 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded while deleting a user from the database!
+ System.InvalidCastException: Failed to convert parameter value from a Int32 to a Guid. ---> System.InvalidCastException: Invalid cast from 'System.Int32' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.Int32.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.DeleteUser(UserVO user) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 218
+05 Oct 2011 12:24:27,080 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 12:24:27,227 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 2...
+ 05 Oct 2011 12:24:27,229 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 12:24:27,233 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 12:25:27,568 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 12:25:27,600 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while deleting a comment from the database!
+ System.InvalidCastException: Failed to convert parameter value from a Int32 to a Guid. ---> System.InvalidCastException: Invalid cast from 'System.Int32' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.Int32.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.DeleteComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 215
+05 Oct 2011 12:25:27,653 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 3...
+ 05 Oct 2011 12:25:27,655 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 12:25:27,660 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 12:25:27,662 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded while deleting a user from the database!
+ System.InvalidCastException: Failed to convert parameter value from a Int32 to a Guid. ---> System.InvalidCastException: Invalid cast from 'System.Int32' to 'System.Guid'.
+   at System.Convert.DefaultToType(IConvertible value, Type targetType, IFormatProvider provider)
+   at System.Int32.System.IConvertible.ToType(Type type, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.BuildParamList(TdsParser parser, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildExecuteSql(CommandBehavior behavior, String commandText, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.DeleteUser(UserVO user) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 218
+05 Oct 2011 12:30:46,631 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 12:30:46,683 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 12:30:46,796 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 4...
+ 05 Oct 2011 12:30:46,799 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 12:30:46,802 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 12:41:01,934 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 12:41:01,970 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 12:41:02,005 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded while trying to insert a submission!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Submission_tbl_User". The conflict occurred in database "Submitter", table "dbo.tbl_User", column 'UserID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.InsertSubmission(SubmissionVO sub) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 194
+05 Oct 2011 12:41:02,062 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded while deleting a submission from the database!
+ System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@submissionID".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.DeleteSubmission(SubmissionVO sub) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 215
+05 Oct 2011 12:41:02,105 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 5...
+ 05 Oct 2011 12:41:02,107 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 12:41:02,116 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 12:41:47,447 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 12:41:47,498 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 12:41:47,524 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded while trying to insert a submission!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Submission_tbl_User". The conflict occurred in database "Submitter", table "dbo.tbl_User", column 'UserID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.InsertSubmission(SubmissionVO sub) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 194
+05 Oct 2011 12:41:47,528 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded while deleting a submission from the database!
+ System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@submissionID".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.DeleteSubmission(SubmissionVO sub) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 215
+05 Oct 2011 12:41:47,578 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 6...
+ 05 Oct 2011 12:41:47,580 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 12:41:47,584 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:43:56,580 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 1...
+ 05 Oct 2011 15:43:56,592 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:43:56,595 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:43:56,601 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded while trying to insert a submission!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Submission_tbl_User". The conflict occurred in database "Submitter", table "dbo.tbl_User", column 'UserID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.InsertSubmission(SubmissionVO sub) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 194
+05 Oct 2011 15:43:56,936 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 15:46:55,194 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 2...
+ 05 Oct 2011 15:46:55,204 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:46:55,207 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:46:55,213 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded while trying to insert a submission!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Submission_tbl_User". The conflict occurred in database "Submitter", table "dbo.tbl_User", column 'UserID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.InsertSubmission(SubmissionVO sub) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 194
+05 Oct 2011 15:46:55,395 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 15:48:11,543 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 3...
+ 05 Oct 2011 15:48:11,553 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:48:11,557 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:48:11,567 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded while trying to insert a submission!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Submission_tbl_User". The conflict occurred in database "Submitter", table "dbo.tbl_User", column 'UserID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.InsertSubmission(SubmissionVO sub) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 194
+05 Oct 2011 15:48:11,618 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 15:49:07,200 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 4...
+ 05 Oct 2011 15:49:07,216 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:49:07,220 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:49:07,224 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 4...
+ 05 Oct 2011 15:49:07,227 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded in trying to retrieve a submission VO!
+ System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@submissionID".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.GetSubmission(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 94
+05 Oct 2011 15:49:07,323 WARN  Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+05 Oct 2011 15:49:07,364 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 15:52:49,975 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 5...
+ 05 Oct 2011 15:52:49,987 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:52:49,990 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:52:49,996 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 5...
+ 05 Oct 2011 15:52:49,999 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded in trying to retrieve a submission VO!
+ System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@SubmissionID".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.GetSubmission(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 94
+05 Oct 2011 15:52:50,042 WARN  Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+05 Oct 2011 15:52:50,075 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 15:53:21,166 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 6...
+ 05 Oct 2011 15:53:21,177 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:53:21,180 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:53:21,183 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 6...
+ 05 Oct 2011 15:53:21,185 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded in trying to retrieve a submission VO!
+ System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@submissionId".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.GetSubmission(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 94
+05 Oct 2011 15:53:21,202 WARN  Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+05 Oct 2011 15:53:21,216 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 15:58:32,333 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 7...
+ 05 Oct 2011 15:58:32,343 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:58:32,347 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:58:32,405 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 7...
+ 05 Oct 2011 15:58:32,409 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 05 Oct 2011 15:58:32,410 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 05 Oct 2011 15:58:32,415 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 15:58:32,511 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 15:59:28,131 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 8...
+ 05 Oct 2011 15:59:28,142 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:59:28,146 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:59:28,152 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 8...
+ 05 Oct 2011 15:59:28,152 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 05 Oct 2011 15:59:28,153 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 05 Oct 2011 15:59:28,157 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 15:59:28,177 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 15:59:59,012 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 9...
+ 05 Oct 2011 15:59:59,022 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 15:59:59,025 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 15:59:59,028 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 9...
+ 05 Oct 2011 15:59:59,029 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 05 Oct 2011 15:59:59,030 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 05 Oct 2011 15:59:59,034 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while trying to insert a comment!
+ System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_tbl_Comment_tbl_Submission". The conflict occurred in database "Submitter", table "dbo.tbl_Submission", column 'SubmissionID'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.InsertComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 193
+05 Oct 2011 15:59:59,056 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - No comment found with an ID of 0
+ 05 Oct 2011 16:01:19,644 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 1...
+ 05 Oct 2011 16:01:19,658 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 16:01:19,662 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 16:01:19,666 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 1...
+ 05 Oct 2011 16:01:19,668 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 05 Oct 2011 16:01:19,668 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 05 Oct 2011 16:01:19,671 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 1...
+ 05 Oct 2011 16:01:19,673 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 16:01:19,673 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 05 Oct 2011 16:01:19,679 ERROR Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Something exploded while deleting a submission from the database!
+ System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@submissionID".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.SubmissionDAO.DeleteSubmission(SubmissionVO sub) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\SubmissionDAO.cs:line 215
+05 Oct 2011 16:02:12,853 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 2...
+ 05 Oct 2011 16:02:12,864 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 16:02:12,867 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 05 Oct 2011 16:02:12,871 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 2...
+ 05 Oct 2011 16:02:12,872 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 05 Oct 2011 16:02:12,872 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 05 Oct 2011 16:02:12,874 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 2...
+ 05 Oct 2011 16:02:12,875 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 05 Oct 2011 16:02:12,875 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 

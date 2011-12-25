@@ -1,0 +1,976 @@
+21 Oct 2011 03:34:35,846 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded while trying to insert a user!
+ System.ArgumentException: Keyword not supported: 'multipleactiveresultssets'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.CreateConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 334
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 1176
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 1200
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 995
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.InsertUser(UserVO user) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 206
+21 Oct 2011 03:34:36,082 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while deleting a comment from the database!
+ System.ArgumentException: Keyword not supported: 'multipleactiveresultssets'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.CreateConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 334
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 1176
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 1200
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 711
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.DeleteComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 215
+21 Oct 2011 07:25:03,161 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded while trying to insert a user!
+ System.ArgumentException: Keyword not supported: 'multipleactiveresultssets'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.CreateConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 334
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 1176
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 1200
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 995
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.InsertUser(UserVO user) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 206
+21 Oct 2011 07:25:03,308 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while deleting a comment from the database!
+ System.ArgumentException: Keyword not supported: 'multipleactiveresultssets'.
+   at System.Data.Common.DbConnectionOptions.ParseInternal(Hashtable parsetable, String connectionString, Boolean buildChain, Hashtable synonyms, Boolean firstKey)
+   at System.Data.Common.DbConnectionOptions..ctor(String connectionString, Hashtable synonyms, Boolean useOdbcRules)
+   at System.Data.SqlClient.SqlConnectionString..ctor(String connectionString)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnectionOptions(String connectionString, DbConnectionOptions previous)
+   at System.Data.ProviderBase.DbConnectionFactory.GetConnectionPoolGroup(String connectionString, DbConnectionPoolGroupOptions poolOptions, DbConnectionOptions& userConnectionOptions)
+   at System.Data.SqlClient.SqlConnection.ConnectionString_Set(String value)
+   at System.Data.SqlClient.SqlConnection.set_ConnectionString(String value)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.CreateConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 334
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetNewOpenConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 1176
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetWrappedConnection() in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 1200
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 711
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.DeleteComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 215
+21 Oct 2011 08:06:53,990 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded while trying to insert a user!
+ System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'tbl_User'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteScalar(IDbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 476
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteScalar(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 998
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.InsertUser(UserVO user) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 206
+21 Oct 2011 08:06:54,092 ERROR Submitter.DataAccess.DataAccessObjects.CommentDAO - Something exploded while deleting a comment from the database!
+ System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'tbl_Comment'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 443
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 714
+   at Submitter.DataAccess.DataAccessObjects.CommentDAO.DeleteComment(CommentVO com) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\CommentDAO.cs:line 215
+21 Oct 2011 08:09:49,880 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 1...
+ 21 Oct 2011 08:09:49,978 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:09:49,986 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:09:50,138 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 1...
+ 21 Oct 2011 08:09:50,199 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:09:50,200 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:09:50,259 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 1...
+ 21 Oct 2011 08:09:50,366 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:09:50,367 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:10:37,170 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 2...
+ 21 Oct 2011 08:10:37,187 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:10:37,194 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:10:37,202 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 2...
+ 21 Oct 2011 08:10:37,203 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:10:37,204 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:10:37,211 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 2...
+ 21 Oct 2011 08:10:37,212 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:10:37,213 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:16:14,242 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 3...
+ 21 Oct 2011 08:16:14,264 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:16:14,272 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:16:14,303 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 3...
+ 21 Oct 2011 08:16:14,305 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:16:14,306 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:16:14,313 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 3...
+ 21 Oct 2011 08:16:14,355 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:16:14,356 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:17:00,139 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 4...
+ 21 Oct 2011 08:17:00,156 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:17:00,164 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:17:00,172 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 4...
+ 21 Oct 2011 08:17:00,173 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:17:00,174 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:17:00,181 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 4...
+ 21 Oct 2011 08:17:00,182 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:17:00,183 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:18:18,561 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 5...
+ 21 Oct 2011 08:18:18,580 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:18:18,588 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:18:18,596 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 5...
+ 21 Oct 2011 08:18:18,598 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:18:18,598 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:18:18,609 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 5...
+ 21 Oct 2011 08:18:18,610 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:18:18,611 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:18:56,906 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 6...
+ 21 Oct 2011 08:18:56,926 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:18:56,933 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:18:56,953 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 6...
+ 21 Oct 2011 08:18:56,955 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:18:56,956 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:18:57,008 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 6...
+ 21 Oct 2011 08:18:57,009 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:18:57,010 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:19:55,629 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of wbobeirne...
+ 21 Oct 2011 08:19:58,282 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:19:58,537 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:19:58,788 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 7...
+ 21 Oct 2011 08:19:58,791 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:19:58,798 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:19:58,832 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 7...
+ 21 Oct 2011 08:19:58,833 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:19:58,834 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:19:58,851 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 7...
+ 21 Oct 2011 08:19:58,861 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:19:58,862 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:20:19,451 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of wbobeirne...
+ 21 Oct 2011 08:20:21,537 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:20:21,557 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:20:21,671 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 8...
+ 21 Oct 2011 08:20:21,673 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:20:21,680 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:20:21,697 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 8...
+ 21 Oct 2011 08:20:21,698 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:20:21,699 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:20:21,706 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 8...
+ 21 Oct 2011 08:20:21,707 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:20:21,708 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:22:39,642 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:22:42,588 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:22:42,702 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:22:42,939 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 9...
+ 21 Oct 2011 08:22:42,941 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:22:42,948 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:22:42,955 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 9...
+ 21 Oct 2011 08:22:42,957 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:22:42,958 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:22:42,963 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 9...
+ 21 Oct 2011 08:22:42,965 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:22:42,966 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:23:48,080 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:23:50,533 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:23:50,585 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:23:50,648 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:23:50,711 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 10...
+ 21 Oct 2011 08:23:50,713 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:23:50,720 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:23:50,721 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:23:50,798 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 11...
+ 21 Oct 2011 08:23:50,799 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:23:50,799 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:23:50,805 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 10...
+ 21 Oct 2011 08:23:50,807 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:23:50,808 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:23:50,818 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 10...
+ 21 Oct 2011 08:23:50,820 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:23:50,821 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:24:31,243 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:24:33,332 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:24:33,352 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:24:33,402 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:24:33,460 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 12...
+ 21 Oct 2011 08:24:33,462 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:24:33,469 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:24:33,470 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:24:33,557 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 13...
+ 21 Oct 2011 08:24:33,558 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:24:33,558 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:24:33,567 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 11...
+ 21 Oct 2011 08:24:33,568 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:24:33,569 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:24:33,582 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 11...
+ 21 Oct 2011 08:24:33,584 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:24:33,585 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:27:40,916 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:27:43,337 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:27:43,370 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:27:43,425 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:27:43,490 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 14...
+ 21 Oct 2011 08:27:43,492 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:27:43,499 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:27:43,500 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:27:43,534 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:27:43,536 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:27:43,537 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:27:43,606 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 15...
+ 21 Oct 2011 08:27:43,608 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:27:43,609 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:27:43,614 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 12...
+ 21 Oct 2011 08:27:43,615 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:27:43,616 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:27:43,619 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 12...
+ 21 Oct 2011 08:27:43,621 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:27:43,621 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:28:46,701 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:28:49,287 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:28:49,310 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:28:49,366 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:28:49,424 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 16...
+ 21 Oct 2011 08:28:49,427 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:28:49,434 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:28:49,435 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:28:49,482 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:28:49,483 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:28:49,484 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:28:49,643 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 17...
+ 21 Oct 2011 08:28:49,646 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:28:49,646 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:28:49,671 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 13...
+ 21 Oct 2011 08:28:49,672 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:28:49,673 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:28:49,749 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 13...
+ 21 Oct 2011 08:28:49,751 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:28:49,752 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:31:15,407 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:31:18,300 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:31:18,447 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:31:18,511 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:31:18,574 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 18...
+ 21 Oct 2011 08:31:18,578 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:31:18,585 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:31:18,586 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:31:18,641 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:31:18,644 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:31:18,645 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:31:18,781 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 19...
+ 21 Oct 2011 08:31:18,783 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:31:18,783 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:31:18,850 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 14...
+ 21 Oct 2011 08:31:18,855 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:31:18,856 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:31:18,867 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 14...
+ 21 Oct 2011 08:31:18,869 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:31:18,870 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:32:22,749 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:32:25,087 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:32:25,118 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:32:25,184 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:32:25,280 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 20...
+ 21 Oct 2011 08:32:25,296 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:32:25,308 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:32:25,308 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:32:25,357 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:32:25,359 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:32:25,361 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:32:25,490 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 21...
+ 21 Oct 2011 08:32:25,491 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:32:25,491 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:32:25,556 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 15...
+ 21 Oct 2011 08:32:25,557 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:32:25,558 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:32:25,567 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 15...
+ 21 Oct 2011 08:32:25,568 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:32:25,569 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:33:46,330 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:33:48,737 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:33:48,760 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:33:48,815 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:33:48,883 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 22...
+ 21 Oct 2011 08:33:48,886 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:33:48,893 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:33:48,894 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:33:48,930 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:33:48,934 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:33:48,935 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:33:49,026 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 23...
+ 21 Oct 2011 08:33:49,027 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:33:49,027 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:33:49,039 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 16...
+ 21 Oct 2011 08:33:49,040 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:33:49,041 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:33:49,044 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 16...
+ 21 Oct 2011 08:33:49,046 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:33:49,046 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:35:05,709 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:35:08,448 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:35:08,538 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:35:08,596 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:35:08,647 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 24...
+ 21 Oct 2011 08:35:08,650 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:35:08,658 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:35:08,658 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:35:08,752 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:35:08,755 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:35:08,755 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:35:08,955 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 25...
+ 21 Oct 2011 08:35:08,956 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:35:08,956 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:35:09,021 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 17...
+ 21 Oct 2011 08:35:09,023 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:35:09,025 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:35:09,091 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 17...
+ 21 Oct 2011 08:35:09,093 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:35:09,094 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:37:13,616 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:37:16,068 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:37:16,160 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:37:16,220 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:37:16,290 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 26...
+ 21 Oct 2011 08:37:16,293 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:37:16,303 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:37:16,303 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:37:16,394 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:37:16,398 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:37:16,400 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:37:16,551 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 27...
+ 21 Oct 2011 08:37:16,552 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:37:16,552 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:37:16,604 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 18...
+ 21 Oct 2011 08:37:16,606 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:37:16,606 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:37:16,610 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 18...
+ 21 Oct 2011 08:37:16,612 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:37:16,613 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:37:16,615 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 08:37:16,617 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:37:16,619 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:37:58,385 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:38:00,654 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:38:00,725 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:38:00,792 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - Inserting Employee xyz
+ 21 Oct 2011 08:38:00,847 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 28...
+ 21 Oct 2011 08:38:00,850 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:38:00,857 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:38:00,858 DEBUG Submitter.BusinessLogic.BusinessObjects.UserManagementBO - User succesfully inserted!
+ 21 Oct 2011 08:38:00,893 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:38:00,895 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:38:00,896 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:38:00,966 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 29...
+ 21 Oct 2011 08:38:00,968 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:38:00,968 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:38:00,972 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 19...
+ 21 Oct 2011 08:38:00,974 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:38:00,974 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:38:00,978 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 19...
+ 21 Oct 2011 08:38:00,979 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:38:00,980 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:38:00,980 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 08:38:00,981 ERROR Submitter.DataAccess.DataAccessObjects.UserDAO - Something exploded in trying to retrieve a user VO!
+ System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'FROM'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteReader(DbCommand command, CommandBehavior cmdBehavior) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 460
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteReader(DbCommand command) in e:\Builds\EntLib\Latest\Source\Blocks\Data\Src\Data\Database.cs:line 846
+   at Submitter.DataAccess.DataAccessObjects.UserDAO.GetUser(DbCommand command) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\DataAccessObjects\UserDAO.cs:line 101
+21 Oct 2011 08:38:00,986 WARN  Submitter.DataAccess.DataAccessObjects.UserDAO - Caught an exception in trying to close the reader, logging only.
+ System.NullReferenceException: Object reference not set to an instance of an object.
+   at Submitter.DataAccess.BaseDAO.CloseReader(IDataReader reader) in C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\DataAccess\BaseDAO.cs:line 51
+21 Oct 2011 08:39:01,305 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 08:39:04,053 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:39:04,076 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:39:04,329 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 30...
+ 21 Oct 2011 08:39:04,330 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:39:04,330 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 08:39:04,340 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 20...
+ 21 Oct 2011 08:39:04,342 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 08:39:04,342 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 08:39:04,355 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 20...
+ 21 Oct 2011 08:39:04,357 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:39:04,357 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 08:39:04,358 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 08:39:04,361 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 08:39:04,361 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:18:56,345 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of xyz...
+ 21 Oct 2011 11:19:00,570 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:19:00,650 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:19:01,912 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 31...
+ 21 Oct 2011 11:19:01,914 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:19:01,914 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:19:01,960 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 21...
+ 21 Oct 2011 11:19:01,963 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 11:19:01,964 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 11:19:01,998 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 21...
+ 21 Oct 2011 11:19:02,035 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:19:02,036 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 11:19:02,036 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 11:19:02,039 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:19:02,039 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:19:40,951 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 32...
+ 21 Oct 2011 11:19:40,974 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:19:40,982 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:19:40,989 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 22...
+ 21 Oct 2011 11:19:40,990 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 11:19:40,991 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 11:19:40,995 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 22...
+ 21 Oct 2011 11:19:40,997 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:19:40,997 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 11:19:40,998 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 11:19:40,999 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:19:40,999 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:38:08,284 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 33...
+ 21 Oct 2011 11:38:08,400 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:38:08,409 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:38:08,419 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 23...
+ 21 Oct 2011 11:38:08,424 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 11:38:08,425 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 11:38:08,432 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 23...
+ 21 Oct 2011 11:38:08,436 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:38:08,437 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 11:38:08,438 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 11:38:08,440 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:38:08,441 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:49:17,700 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 34...
+ 21 Oct 2011 11:49:17,741 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:49:17,749 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:49:17,800 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 24...
+ 21 Oct 2011 11:49:17,814 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 11:49:17,815 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 11:49:17,855 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 24...
+ 21 Oct 2011 11:49:17,865 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:49:17,865 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 11:49:17,866 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 11:49:17,873 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:49:17,873 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:53:44,241 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 35...
+ 21 Oct 2011 11:53:44,261 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:53:44,269 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 11:53:44,355 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 25...
+ 21 Oct 2011 11:53:44,359 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 11:53:44,361 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 11:53:44,411 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 25...
+ 21 Oct 2011 11:53:44,416 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:53:44,417 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 11:53:44,418 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 11:53:44,424 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 11:53:44,425 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 12:09:05,003 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 36...
+ 21 Oct 2011 12:09:05,205 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:09:05,218 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 12:09:05,441 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 26...
+ 21 Oct 2011 12:09:05,444 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 12:09:05,446 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 12:09:05,526 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 26...
+ 21 Oct 2011 12:09:05,529 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:09:05,530 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 12:09:05,532 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 12:09:05,536 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:09:05,536 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 12:19:03,378 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 37...
+ 21 Oct 2011 12:19:03,398 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:19:03,404 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 12:19:03,437 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 27...
+ 21 Oct 2011 12:19:03,440 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 12:19:03,440 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 12:19:03,452 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 27...
+ 21 Oct 2011 12:19:03,456 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:19:03,458 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 12:19:03,459 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 12:19:03,464 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:19:03,464 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 12:20:07,283 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 38...
+ 21 Oct 2011 12:20:07,309 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:20:07,319 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 12:20:07,383 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 28...
+ 21 Oct 2011 12:20:07,389 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 12:20:07,391 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 12:20:07,409 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 28...
+ 21 Oct 2011 12:20:07,423 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:20:07,424 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 12:20:07,425 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 12:20:07,428 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:20:07,428 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 12:56:15,330 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 39...
+ 21 Oct 2011 12:56:15,586 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:56:15,593 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 12:56:15,687 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 29...
+ 21 Oct 2011 12:56:15,690 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 12:56:15,691 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 12:56:15,791 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 29...
+ 21 Oct 2011 12:56:15,796 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:56:15,797 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 12:56:15,798 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 12:56:15,902 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 12:56:15,902 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 13:00:00,812 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 40...
+ 21 Oct 2011 13:00:00,842 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:00:00,848 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 13:00:00,873 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 30...
+ 21 Oct 2011 13:00:00,875 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 13:00:00,876 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 13:00:00,982 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 30...
+ 21 Oct 2011 13:00:00,984 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:00:00,985 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 13:00:00,986 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 13:00:00,989 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:00:00,989 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 13:01:03,875 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 41...
+ 21 Oct 2011 13:01:03,894 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:01:03,903 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 13:01:03,914 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 31...
+ 21 Oct 2011 13:01:03,916 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 13:01:03,917 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 13:01:03,981 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 31...
+ 21 Oct 2011 13:01:03,984 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:01:03,985 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 13:01:03,987 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 13:01:03,989 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:01:03,989 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 13:50:16,921 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a user ID of 43...
+ 21 Oct 2011 13:50:16,970 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:50:16,978 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 21 Oct 2011 13:50:16,985 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Retrieving submission of submissionID 32...
+ 21 Oct 2011 13:50:16,988 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - DataReader created, retrieving sbumission VO...
+ 21 Oct 2011 13:50:16,988 DEBUG Submitter.DataAccess.DataAccessObjects.SubmissionDAO - Submission VO retrieved!
+ 21 Oct 2011 13:50:16,996 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Retrieving comment with a comment ID of 32...
+ 21 Oct 2011 13:50:16,998 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:50:16,999 DEBUG Submitter.DataAccess.DataAccessObjects.CommentDAO - Comment VO retrieved!
+ 21 Oct 2011 13:50:16,999 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - Retrieving user with a username of Yousername...
+ 21 Oct 2011 13:50:17,002 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - DataReader created, retrieving user VO...
+ 21 Oct 2011 13:50:17,002 DEBUG Submitter.DataAccess.DataAccessObjects.UserDAO - User VO retrieved!
+ 

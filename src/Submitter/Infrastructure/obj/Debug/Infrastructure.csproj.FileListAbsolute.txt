@@ -1,0 +1,10 @@
+C:\Users\Will\Dropbox\School\ASP.Net\Submitter\src\Submitter\Web\bin\Submitter.Infrastructure.dll
+C:\Users\Will\Dropbox\School\ASP.Net\Submitter\src\Submitter\Web\bin\Submitter.Infrastructure.pdb
+C:\Users\Will\Dropbox\School\ASP.Net\Submitter\src\Submitter\Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Will\Dropbox\School\ASP.Net\Submitter\src\Submitter\Infrastructure\obj\Debug\Submitter.Infrastructure.dll
+C:\Users\Will\Dropbox\School\ASP.Net\Submitter\src\Submitter\Infrastructure\obj\Debug\Submitter.Infrastructure.pdb
+C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\Web\bin\Submitter.Infrastructure.dll
+C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\Web\bin\Submitter.Infrastructure.pdb
+C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\Infrastructure\obj\Debug\Submitter.Infrastructure.dll
+C:\Users\Will\Documents\My Dropbox\School\ASP.Net\Submitter\src\Submitter\Infrastructure\obj\Debug\Submitter.Infrastructure.pdb

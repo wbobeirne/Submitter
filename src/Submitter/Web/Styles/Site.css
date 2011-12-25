@@ -1,0 +1,317 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    min-width: 1000px;
+    background: #F5F5F5;
+    /*background-image: url(../Images/bright_squares.png);*/
+    background-repeat: repeat;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+}
+
+a:link, a:visited
+{
+    color: #696969;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+td, tr 
+{
+    border: none;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    min-width: 1000px;
+    background-color: #EEEEEE;
+    margin: 20px 40px 20px 40px;
+    border: 1px solid #CCC;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    height: 30px;
+    background: #303934;
+    width: 100%;
+    vertical-align: top;
+}
+
+.logo a:link, a:visited
+{
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #74A722;
+    border: none;
+    font-size: 20px;  
+    text-decoration: none;
+    float: left;
+}
+
+.login
+{
+    color: #74A722;
+    float:right;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 4px;
+    font-size: 16px;
+}
+
+.login a:link, a:visited
+{
+    color: #74A722;
+    text-decoration: none;
+}
+
+.login a:hover
+{
+    color: #74A722;
+    text-decoration: underline;
+}
+
+.submissionLinks
+{
+    text-align:center;
+    color: #74A722;
+    float: left;
+    font-size: 16px;
+    text-decoration:none;
+    padding-top: 4px;
+}
+
+.submissionLinks a:link, a:visited
+{
+    color: #74A722;
+    text-align: center;
+    font-size: 16px;
+    text-decoration:none;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    border-top: 1px solid #CCCCCC;
+    color: #4e5766;
+    margin: 0px auto;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+
+.footer p
+{
+    color: #AAA;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    font-size: 10px;
+}
+
+.footer table
+{
+    margin: auto;
+}
+
+.footer td
+{
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer a img
+{
+    background: #EEE;
+    border: none;
+}
+
+/* Submitter content 
+----------------------------------------------------------*/
+
+.userDetails p
+{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+.userDetails h1
+{
+    margin: 0em;
+    padding: 0em;
+}
+
+.userDetails a:link, a:visited
+{
+    color: #74A722;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.userDetails td
+{
+    width: auto; 
+    border: none;  
+}
+
+.submissions 
+{
+    
+}
+
+.submissions td, tr
+{
+    border-top: 1px solid #CCC;
+}
+
+.subDetails a:link, a:visited
+{
+    color: #696969;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.subTitle a:link
+{
+    color: #74A722;
+    font-size: 20px;
+    text-decoration:none;
+}
+
+.subTitle a:visited
+{
+    color: #999;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.comments table, th, td
+{
+    border: 0px;
+    max-width: 800px;
+    min-width: 25px;
+}
+
+.commentVote td
+{
+    min-width: 25px;
+    max-width: 25px;
+    text-align:center; 
+    vertical-align:top; 
+    font: normal x-small verdana, arial, helvetica, sans-serif; 
+    font-weight:bold;
+}
+
+.comments 
+{
+    font-size: 12px;
+}
+
+.comments p
+{
+    color: #000;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.comments a:link, a:visited
+{
+    color: #74A722;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.comments a:hover
+{
+    text-decoration: underline;
+}

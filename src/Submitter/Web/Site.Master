@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Web.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<%@ Register Src="~/Controls/LoginControl.ascx" TagName="LoginControl" TagPrefix="lc" %>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <span class="logo">
+                <asp:LinkButton ID="siteName" runat="server" Text="Submitter" OnClick="Logo_Click" />
+            </span>
+            <span class="submissionLinks">
+                     |
+                    <asp:LinkButton ID="submissionsNew" runat="server" Text="new" OnClick="SubmissionsNew_Click" />
+                     | 
+                    <asp:LinkButton ID="submissionsPopular" runat="server" Text="popular" OnClick="SubmissionsPopular_Click" />
+                     | 
+                    <asp:LinkButton ID="submissionsTop" runat="server" Text="top" OnClick="SubmissionsTop_Click" /> 
+                     | 
+                    <asp:LinkButton ID="submissionSubmit" runat="server" Text="submit" OnClick="SubmissionsSubmit_Click" />
+                     |
+            </span>
+            <span class="login">
+                <lc:LoginControl ID="loginControl" runat="server" Visible="true" />
+            </span>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="footer">
+            <script type="text/javascript" src="/scripts/jquery-1.4.1.min.js"></script>
+            <script type="text/javascript" src="/scripts/jquery.fade.js"></script>
+            <table>
+                <tr>
+                    <td>
+                        <p>This website and its graphics were written/made by William O'Beirne... mostly</p>
+                        <p>Use of this site constitutes acceptance that I own your soul</p>
+                    </td>
+                    <td>
+                        <div id="footerimages" style="position: relative; left: 0; top: 0;">
+                            <img src="/images/twitteruncolored.png" style="position: relative; top: 0; left: 0;"/>
+                            <a href="https://twitter.com/#!/wbobeirne"><img src="/images/twittercolored.png" style="position: absolute; top: 0; left: 0;" class="footerimages"/></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="footerimages" style="position: relative; left: 0; top: 0;">
+                            <img src="/images/mailuncolored.png" style="position: relative; top: 0; left: 0;"/>
+                            <a href="mailto:wbobeirne@gmail.com"><img src="/images/mailcolored.png" style="position: absolute; top: 0; left: 0;" class="footerimages"/></a>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
